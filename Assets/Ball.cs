@@ -26,7 +26,7 @@ public class Ball : MonoBehaviour
         //
 
         string materialName = other.gameObject.GetComponent<MeshRenderer>().material.name;
-        Debug.Log("Materyal Adý:" + materialName);
+        Debug.Log("Materyal Adi:" + materialName);
 
         
         if(materialName == "Floor (Instance)")
@@ -35,7 +35,7 @@ public class Ball : MonoBehaviour
         }
         if (materialName == "Floor2 (Instance)")
         {
-            rb.AddForce(Vector3.up * (jumpforce * 4));
+            rb.AddForce(Vector3.up * (jumpforce * 0));
 
         }
 
